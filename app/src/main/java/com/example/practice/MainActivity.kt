@@ -35,10 +35,17 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("Task 8", removeDuplicatesAndSort(listOf(5, 1, 2, 5, 3, 1)).toString())
         Log.d("Task 9", studentsAboveAverage(mapOf(
-            "Аня" to 85,
+            "Bob" to 85,
             "Олег" to 75,
             "Ира" to 95
         )).toString())
+
+        Log.d("Task 10", mergeListsUniqueSorted(
+            listOf("яблоко", "банан", "груша"),
+            listOf("банан", "киви")
+        ).toString())
+        
+        Log.d("Task 11", printIfLong("клавиатура").toString())
 
 
     }

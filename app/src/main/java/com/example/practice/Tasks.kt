@@ -46,3 +46,13 @@ fun studentsAboveAverage(grades: Map<String, Int>): List<String> {
     val average = grades.values.average()
     return grades.filter { it.value > average }.keys.toList()
 }
+
+fun mergeListsUniqueSorted(list1: List<String>, list2: List<String>): List<String> {
+    return (list1 + list2).toSet().sorted()
+}
+
+fun printIfLong(s: String?) {
+    s?.let {
+        if (it.length > 5) println(it.uppercase())
+    }
+}
